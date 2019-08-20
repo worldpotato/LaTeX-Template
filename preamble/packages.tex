@@ -8,7 +8,7 @@ headsepline=true, % line between header and text
 footsepline=false, % line between text and footer number
 fontsize=12pt, % font size
 parskip=false, % adds a space at the beginning of a line after \par
-footnotes=multiple % mulitiple or nomultiple, manages the devider between two footnote numbers
+footnotes=nomultiple % mulitiple or nomultiple, manages the devider between two footnote numbers, multiple doesn't work with hyperref
 ]
 {scrreprt}
 
@@ -27,22 +27,16 @@ footnotes=multiple % mulitiple or nomultiple, manages the devider between two fo
 
 % Documentinformations
 % Hyperlink creations and PDF Informations
-%\usepackage[
-%	draft=false,
-%	pdftitle={title},
-%	pdfsubject={},
-%	pdfauthor={Your name},
-%	pdfkeywords={},
-%	pdfcreator={pdflatex},
-%	colorlinks=true, % use colors instead of frames
-%	linkcolor=red
-%]{hyperref}
+\usepackage[
+	draft=false,
+	colorlinks=true, % use colors instead of frames
+]{hyperref}
 
-% Standard Packages
+% For a good german
 \usepackage[utf8]{inputenc}
-\usepackage[german]{babel}
-%\usepackage[T1]{fontenc}
-%\usepackage{graphicx, subfig}
+\usepackage[english]{babel} % or german
+
+
 %\usepackage{fancyhdr} % fancy header
 %\usepackage{lmodern} % latin modern font
 %\usepackage{color}
