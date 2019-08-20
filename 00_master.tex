@@ -1,0 +1,67 @@
+% =========================== Main File =========================== %
+%						  by Felix Strobel
+%						    Licence: MIT
+%			made for Munich University of Applied Sciences
+%
+% =========================== Main File =========================== %	
+
+
+
+% =========================== Contribution =========================== %
+% 					      Do you found a bug?
+%				    Do you know a better solution?		
+%					  You want to add a feature?
+%
+%				       Then follow these steps:
+%    		Fork https://github.com/worldpotato/HM-LaTeX_Template
+%						  Make your changes
+%				   Create a well described Pull Request		
+% =========================== Contribution =========================== %
+
+
+
+
+
+
+% Packages
+\include{preamble/packages}
+
+% infos about the document like author	
+\include{preamble/documentInfos}
+	
+
+%\graphicspath{{img/}}
+
+% Do not indent after paragraph
+%\setlength{\parindent}{0pt}
+
+% additional hyphenation
+\include{preamble/hyphenation}
+
+
+
+% ============= Begin of document =============
+
+\begin{document}
+
+% basic pages
+
+\include{content/01_title}
+\include{content/02_abstract}
+\include{content/03_tablesOfContent}
+
+
+% Ends a page and force printing all defined but not printed floating objects on all following pages. If neccessary a blank page will be inserted to make sure that the next page has an odd number.
+\cleardoublepage
+
+\pagestyle{headings}	
+	
+	\include{content/04_text_example}
+	\include{content/05_footnote_example}
+	\include{content/06_quotes_example}	
+	\include{content/07_lists_example}	
+	% references
+%	\bibliographystyle{unsrtdin}
+%	\bibliography{bib/literature}
+
+\end{document}
