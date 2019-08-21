@@ -1,16 +1,15 @@
 % Document class
 \documentclass[
-draft=true, % shows little squares at the end of a overfull line. In case with incompatibility with other packages use: overfullrule=true to show these lines.
-oneside, % oneside or twoside
-a4paper, % din a4 format
-titlepage=firstiscover, % first page is a cover
-headsepline=true, % line between header and text
-footsepline=false, % line between text and footer number
-fontsize=12pt, % font size
-parskip=false, % adds a space at the beginning of a line after \par
-footnotes=nomultiple, % mulitiple or nomultiple, manages the devider between two footnote numbers, multiple doesn't work with hyperref
-]
-{scrreprt}
+	draft=false, % shows little squares at the end of a overfull line. In case with incompatibility with other packages use: overfullrule=true to show these lines.
+	oneside, % oneside or twoside
+	a4paper, % din a4 format
+	titlepage=firstiscover, % first page is a cover
+	headsepline=true, % line between header and text
+	footsepline=false, % line between text and footer number
+	fontsize=12pt, % font size
+	parskip=false, % adds a space at the beginning of a line after \par
+	footnotes=nomultiple, % mulitiple or nomultiple, manages the devider between two footnote numbers, multiple doesn't work with hyperref
+]{scrreprt}
 
 % for labeling list
 \setkomafont{labelinglabel}{\bfseries\sffamily}
@@ -97,18 +96,3 @@ footnotes=nomultiple, % mulitiple or nomultiple, manages the devider between two
 	commentstyle=\itshape\color{myAmethyst},    % comment style
 	identifierstyle=\color{blue},
 }
-
-%\usepackage{lmodern} % latin modern font
-%\usepackage{transparent}
-
-%\usepackage[numbered,framed]{matlab-prettifier}
-% for better lists
-%\usepackage{enumitem}
-
-% additional characters of the American Mathematical Societey
-
-
-
-%\microtypecontext{spacing=nonfrench}
-
-
