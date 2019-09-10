@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: install Latex
-      run: |
-        sudo apt-get install texlive-full
-        pdflatex 00_master.tex
+      run:  sudo apt-get install texlive-full
+    - name: compile 00_master.tex
+      run:  pdflatex 00_master.tex
