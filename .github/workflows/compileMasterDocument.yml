@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: install Latex
       run: |
-        apt-get install texlive-full
+        sudo apt-get install texlive-full
         pdflatex 00_master.tex
