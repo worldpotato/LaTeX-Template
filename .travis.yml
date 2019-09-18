@@ -1,15 +1,6 @@
-name: CI
-
-on: [push]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-    
-    steps:
-    - uses: actions/checkout@v1
-    - name: install Latex
-      run:  sudo apt-get install texlive-full
-    - name: compile 00_master.tex
-      run:  pdflatex 00_master.tex
+language: generic
+# Dependency of the minted package
+before_install:
+    - sudo apt-get install texlive-full
+install:
+    - pdflatex 00_master.tex
