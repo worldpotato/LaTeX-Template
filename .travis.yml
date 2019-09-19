@@ -4,11 +4,9 @@ before_install:
     - sudo apt-get install texlive-full
 install:
     - pdflatex 00_master.tex
-before_deploy:
-      - git config --local user.name "Travis"
-      - git config --local user.email "mail@felixstrobel.de"
-      - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
-      - git tag $TRAVIS_TAG
+    - bibtex 00_master
+    - pdflatex 00_master.tex
+    - pdflatex 00_master.tex
 deploy:
     provider: releases
     api_key: $GITHUB_TOKEN
