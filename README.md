@@ -1,2 +1,5 @@
-This is my template for all the work at the HM.
-It is based on the KOMA scripts. 
+#My template for LaTeX documents. 
+
+It is based on the KOMA scripts and aims for documents with mathematical and software development topics. 
+
+You can find an example in the current [releases](https://github.com/worldpotato/HM-LaTeX-Template/releases "releases")
