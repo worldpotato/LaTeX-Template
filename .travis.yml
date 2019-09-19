@@ -12,3 +12,5 @@ deploy:
     api_key: $GITHUB_TOKEN
     file: ./00_master.pdf
     skip_cleanup: true
+    on:
+        tags: true
