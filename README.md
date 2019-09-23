@@ -6,7 +6,7 @@ You can find an example in the current [releases](https://github.com/worldpotato
 
 # Build Status
 
-[![Build Status](https://travis-ci.org/worldpotato/HM-LaTeX-Template.svg?branch=master)](https://travis-ci.org/worldpotato/HM-LaTeX-Template)
+[![Build Status](https://travis-ci.org/worldpotato/LaTeX-Template.svg?branch=master)](https://travis-ci.org/worldpotato/LaTeX-Template)
 
 [![Latest Tag](https://badgen.net/github/tag/worldpotato/LaTeX-Template)](https://badgen.net/github/tag/worldpotato/LaTeX-Template)
 
