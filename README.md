@@ -34,3 +34,7 @@ One can find different stuff in the `./preamble/` folder. But mainly it's the ba
 
 You can add codesnippets to your document by importing a sourcecode file. These files should be stored in here. Ofcourse you can create your own folders to organize the code. 
 To import the sourcecode files has the advantage to be able to open the files in your favourite IDE and. 
+
+# Vim
+
+If vim is your favourite editor you can easily load the `vimSession.vim` file with `vim -S vimSession.vim` in the rood directory of that repository.
