@@ -89,16 +89,11 @@ SessionLoad	vimSession.vim	/^let SessionLoad = 1$/;"	v
 Sourcecode	README.md	/^## Sourcecode$/;"	s
 Sourcecode	content/12_sourcecode_example.tex	/^\\chapter{Sourcecode}$/;"	c
 Structure	README.md	/^# Structure$/;"	c
-Text example Capter2	content/04_text_example.tex	/^\\chapter{Text example Capter2}$/;"	c
-Text example section1	content/04_text_example.tex	/^\\section{Text example section1}$/;"	s	chapter:short title: text example Chapter1
-Text example section2	content/04_text_example.tex	/^\\section{Text example section2}$/;"	s	chapter:Text example Capter2
-Text example subsection1	content/04_text_example.tex	/^\\subsection{Text example subsection1}$/;"	u	section:short title: text example Chapter1""Text example section1
-Text example subsection2	content/04_text_example.tex	/^\\subsection{Text example subsection2}$/;"	u	section:Text example Capter2""Text example section2
-Text example subsubsection1	content/04_text_example.tex	/^\\subsubsection{Text example subsubsection1}$/;"	b	subsection:short title: text example Chapter1""Text example section1""Text example subsection1
-Text example subsubsection2	content/04_text_example.tex	/^\\subsubsection{Text example subsubsection2}$/;"	b	subsection:Text example Capter2""Text example section2""Text example subsection2
 Units	content/11_math_example.tex	/^\\section{Units}$/;"	s	chapter:Math
 Verse	content/07_lists_example.tex	/^\\section{Verse}$/;"	s	chapter:Lists
 Vim	README.md	/^# Vim$/;"	c
+Zu meinem Projekt	content/04_text_example.tex	/^\\chapter{Zu meinem Projekt}$/;"	c
+Zu meiner Person	content/04_text_example.tex	/^\\chapter{Zu meiner Person}$/;"	c
 [c	vimSession.vim	/^nmap <buffer> [c <Plug>(GitGutterPrevHunk)$/;"	m
 \\c$	vimSession.vim	/^nmap \\c$ <Plug>NERDCommenterToEOL$/;"	m
 \\cA	vimSession.vim	/^nmap \\cA <Plug>NERDCommenterAppend$/;"	m
@@ -136,21 +131,7 @@ appendix section	content/99_appendix_example.tex	/^\\section{appendix section}$/
 bordernotes	content/10_bordernotes_example.tex	/^\\chapter{bordernotes}$/;"	c
 cc	img/Hochschule_Muenchen_logo.svg	/^   id="svg4443">$/;"	n	uri:http://creativecommons.org/ns#
 content/01_title	00_master.tex	/^    \\include{content\/01_title}$/;"	i
-content/02_abstract	00_master.tex	/^    \\include{content\/02_abstract}$/;"	i
-content/03_tablesOfContent	00_master.tex	/^    \\include{content\/03_tablesOfContent}$/;"	i
 content/04_text_example	00_master.tex	/^    \\include{content\/04_text_example}$/;"	i
-content/05_footnote_example	00_master.tex	/^    \\include{content\/05_footnote_example}$/;"	i
-content/06_quotes_example	00_master.tex	/^    \\include{content\/06_quotes_example}$/;"	i
-content/07_lists_example	00_master.tex	/^    \\include{content\/07_lists_example}$/;"	i
-content/08_tables_example	00_master.tex	/^    \\include{content\/08_tables_example}$/;"	i
-content/09_images_example	00_master.tex	/^    \\include{content\/09_images_example}$/;"	i
-content/10_bordernotes_example	00_master.tex	/^    \\include{content\/10_bordernotes_example}$/;"	i
-content/11_math_example	00_master.tex	/^    \\include{content\/11_math_example}$/;"	i
-content/12_sourcecode_example	00_master.tex	/^    \\include{content\/12_sourcecode_example}$/;"	i
-content/13_bib_example	00_master.tex	/^    \\include{content\/13_bib_example}$/;"	i
-content/14_draw_diagrams_example	00_master.tex	/^    \\include{content\/14_draw_diagrams_example}$/;"	i
-content/98_acronym	00_master.tex	/^    \\include{content\/98_acronym}$/;"	i
-content/99_appendix_example	00_master.tex	/^    \\include{content\/99_appendix_example}$/;"	i
 dc	img/Hochschule_Muenchen_logo.svg	/^   id="svg4443">$/;"	n	uri:http://purl.org/dc/elements/1.1/
 defs4445	img/Hochschule_Muenchen_logo.svg	/^     id="defs4445">$/;"	i
 description	content/07_lists_example.tex	/^\\section{description}$/;"	s	chapter:Lists
@@ -242,7 +223,6 @@ s:so_save	vimSession.vim	/^let s:so_save = &so | let s:siso_save = &siso | set s
 s:sx	vimSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
 s:wipebuf	vimSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
 short smart quote	content/06_quotes_example.tex	/^\\section{short smart quote}$/;"	s	chapter:smart Quote
-short title: text example Chapter1	content/04_text_example.tex	/^\\chapter[short title: text example Chapter1]{Text example Chapter1}$/;"	c
 simple	content/14_draw_diagrams_example.tex	/^\\section{simple}$/;"	s	chapter:Draw diagrams
 simple Image placement	content/09_images_example.tex	/^\\section{simple Image placement}$/;"	s	chapter:images
 simple footnote	content/05_footnote_example.tex	/^\\section{simple footnote}$/;"	s	chapter:Footnote examples
@@ -259,5 +239,5 @@ text5343	img/Hochschule_Muenchen_logo.svg	/^       style="font-size:71.81745911p
 text5343-7	img/Hochschule_Muenchen_logo.svg	/^       style="font-size:73.12447357px;font-style:normal;font-weight:normal;line-height:125%;lett/;"	i
 text5351	img/Hochschule_Muenchen_logo.svg	/^       style="font-size:154.42764282px;font-style:normal;font-weight:normal;line-height:125%;let/;"	i
 text5351-4	img/Hochschule_Muenchen_logo.svg	/^       style="font-size:181.64437866px;font-style:normal;font-weight:normal;line-height:125%;let/;"	i
-thirdExampleFootnote	content/05_footnote_example.tex	/^Lorem ipsum\\footnote{This footnote has multiple usages \\label{thirdExampleFootnote}} dolor sit/;"	l
+thirdExampleFootnote	content/05_footnote_example.tex	/^Lorem ipsum\\footnote{This footnote has multiple usages\\label{thirdExampleFootnote}} dolor sit\\/;"	l
 xlink	img/Hochschule_Muenchen_logo.svg	/^   id="svg4443">$/;"	n	uri:http://www.w3.org/1999/xlink
