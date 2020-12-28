@@ -1,4 +1,5 @@
 % Document class
+
 \documentclass[
 	draft=false, % shows little squares at the end of a overfull line. In case with incompatibility with other packages use: overfullrule=true to show these lines.
 	oneside, % oneside or twoside
@@ -14,6 +15,11 @@
 % for labeling list
 \setkomafont{labelinglabel}{\bfseries\sffamily}
 \setkomafont{labelingseparator}{\normalfont}
+
+\usepackage{fontspec}
+    \setmainfont{DejaVuSerifCondensed}
+    \setsansfont{DejaVuSansCondensed}
+    \setmonofont{JetBrains Mono Regular Nerd Font Complete Mono}
 
 % to work with pictures
 \usepackage{graphicx}
