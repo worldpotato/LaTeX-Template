@@ -1,7 +1,7 @@
 language: generic
 # Dependency of the minted package
 before_install:
-    - sudo apt-get install libfontconfig1-dev libgraphite2-dev libharfbuzz-dev libicu-dev libssl-dev zlib1g-dev
+    - sudo apt-get install libfontconfig1-dev libgraphite2-dev libharfbuzz-dev libicu-dev libssl-dev zlib1g-dev cargo
     - cargo install tectonic
 install:
     - tectonic main.tex
