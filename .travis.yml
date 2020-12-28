@@ -9,7 +9,7 @@ before_install:
     - sudo apt-get install libfontconfig1-dev libgraphite2-dev libharfbuzz-dev libicu-dev libssl-dev zlib1g-dev cargo
     - cargo install tectonic
 install:
-    - tectonic main.tex
+    - $HOME/.cargo/bin/tectonic main.tex
 deploy:
     provider: releases
     api_key: $GITHUB_TOKEN
