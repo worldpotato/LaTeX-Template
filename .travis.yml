@@ -6,7 +6,7 @@ dist: focal
 
 
 before_install:
-    - sudo apt-get install libfontconfig1-dev libgraphite2-dev libharfbuzz-dev libicu-dev libssl-dev zlib1g-dev cargo
+    - sudo apt-get install libfontconfig1-dev libgraphite2-dev libharfbuzz-dev libicu-dev libssl-dev zlib1g-dev cargo ttf-dejavu
     - cargo install tectonic
 install:
     - $HOME/.cargo/bin/tectonic main.tex
