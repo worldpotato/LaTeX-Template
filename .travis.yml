@@ -1,16 +1,14 @@
 language: generic
 # Dependency of the minted package
 before_install:
-    - sudo apt-get install texlive-full
+    - sudo apt-get install libfontconfig1-dev libgraphite2-dev libharfbuzz-dev libicu-dev libssl-dev zlib1g-dev
+    - cargo install tectonic
 install:
-    - pdflatex 00_master.tex
-    - bibtex 00_master
-    - pdflatex 00_master.tex
-    - pdflatex 00_master.tex
+    - tectonic main.tex
 deploy:
     provider: releases
     api_key: $GITHUB_TOKEN
-    file: ./00_master.pdf
+    file: ./main.pdf
     skip_cleanup: true
     on:
         tags: true
