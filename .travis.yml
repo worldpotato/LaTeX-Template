@@ -1,5 +1,10 @@
 language: generic
 # Dependency of the minted package
+
+os: linux
+dist: focal
+
+
 before_install:
     - sudo apt-get install libfontconfig1-dev libgraphite2-dev libharfbuzz-dev libicu-dev libssl-dev zlib1g-dev cargo
     - cargo install tectonic
