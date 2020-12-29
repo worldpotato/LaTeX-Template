@@ -26,7 +26,7 @@ jobs:
 
         - stage: compile
           before_script:
-          - sudo apt-get -y install ttf-dejavu
+          - sudo apt-get -y install ttf-dejavu libfontconfig1-dev libgraphite2-dev libharfbuzz-dev libicu-dev libssl-dev zlib1g-dev
           script:
           - $HOME/.cargo/bin/tectonic main.tex
 
