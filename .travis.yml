@@ -1,19 +1,41 @@
-language: generic
+language: latex
 # Dependency of the minted package
 
 os: linux
 dist: focal
+addons:
+  apt:
+    packages:
+    - libfontconfig1-dev
+    - libgraphite2-dev
+    - libharfbuzz-dev
+    - libicu-dev 
+    - libssl-dev
+    - zlib1g-dev
+    - cargo
+    - ttf-dejavu
 
-
-before_install:
-    - sudo apt-get install libfontconfig1-dev libgraphite2-dev libharfbuzz-dev libicu-dev libssl-dev zlib1g-dev cargo ttf-dejavu
-    - cargo install tectonic
-install:
-    - $HOME/.cargo/bin/tectonic main.tex
-deploy:
-    provider: releases
-    api_key: $GITHUB_TOKEN
-    file: ./main.pdf
-    skip_cleanup: true
-    on:
-        tags: true
+jobs:
+    include:
+        - stage: 
+            - name: install tectonic and font
+            script:
+                - cargo install tectonic
+            script:
+                - wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+                - mkdir -p $HOME/.local/share/fonts/JetBrainsMono
+                - unzip -d $HOME/.local/share/fonts/JetBrainsMono
+                - fc-cache -f -v
+        - stage:
+            - name: compile
+            script:
+                - $HOME/.cargo/bin/tectonic main.tex
+        - stage:
+            - name: deploy to github
+            deploy:
+                provider: releases
+                api_key: $GITHUB_TOKEN
+                file: ./main.pdf
+                skip_cleanup: true
+                on:
+                    tags: true
